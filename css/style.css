@@ -27,11 +27,15 @@ html{
     background-color: rgb(60, 18, 136);
 }
 
+
+
 /* Body */
 
 body{
     height: 400vh;
 }
+
+
 
 /* Header / Navigation */
 
@@ -84,7 +88,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color: rgb(202, 176, 136);
+    filter: brightness(0.75);
 }
 
 .contact{
@@ -96,9 +100,7 @@ header nav ul li a:hover{
 }
 
 .contact:hover{
-    background-color: rgba(29, 68, 42, 0.9);
-    border: 2px solid rgb(29, 68, 42, 0.9);
-    color: rgb(202, 176, 136);
+    filter: brightness(0.8);
 }
 
 header{
@@ -117,8 +119,8 @@ header{
 }
 
 
-/* Main */
 
+/* Main */
 
 main{
     padding-top: 5vh;
@@ -171,7 +173,7 @@ main{
 .main-btn{
     display: inline-block;
     text-align: center;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
     color:rgb(46, 132, 207);
     background: linear-gradient(to right, rgb(46, 5, 80), rgb(88, 12, 187));
     font-size: 4rem;
@@ -185,9 +187,7 @@ main{
 }
 
 .main-btn:hover{
-    opacity: 0.95;
-    color: rgb(41, 111, 172);
-    text-shadow: 1px 1px 3px black;
+    filter: brightness(0.85);
 }
 
 
@@ -216,8 +216,6 @@ main{
     width: 90vw;
     height: 80vh;
 }
-
-
 
 .payment-methods{
     font-size: 5rem;
@@ -253,7 +251,6 @@ main{
 
 .paypal-logo{
     width: 300px;
-
     transition: 0.3s;
 }
 
@@ -284,14 +281,14 @@ main{
     padding: 5px;
 }
 
-.selling-adnotation-span a{
+.selling-adnotation-span{
     text-decoration: none;
     color: brown;
-    transition: 0.3s;
+    transition: all 0.2s ease-in;
 }
 
-.selling-adnotation-span a:hover{
-    text-shadow: 2px 2px 3px black;
+.selling-adnotation-span:hover{
+    /* text-shadow: 2px 2px 3px black; */
     font-weight: bold;
 }
 
@@ -353,21 +350,30 @@ main{
 }
 
 .desc{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: rgb(36, 209, 209);
     text-shadow: 2px 2px 2px black;
-    
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .safety-logo, .instant-logo, .banwarranty-logo, .changeablepass-logo{
     height: 15vh;
 }
 
+.safety-logo-adnonation-span{
+    font-style: italic;
+    font-weight: bold;
+}
 
+.instant-logo-adnonation-span{
+    color: rgb(55, 190, 168);
+    font-weight: bold;
+}
 
-
-
-
+.instant-logo-adnonation-shop-span{
+    color: rgb(172, 34, 34);
+}
 
 
 /* Page 4 */
@@ -387,3 +393,58 @@ main{
     background-color: black;
 }
 
+.forth-p-content{
+    position: absolute;
+    top: 16vh;
+    left: 5vw;
+    width: 90vw;
+    height: 80vh;
+    font-size: 0;
+    box-shadow: 5px 5px 10px 5px black;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.faq{
+    height: 20%;
+    text-align:left;
+    padding-left: 10px;
+}
+
+.faq-ques{
+    font-size: 3rem;
+    color: rgb(26, 121, 121);
+    text-shadow: 3px 3px 2px black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.faq-ans{
+    font-size: 2rem;
+    color: coral;
+    text-shadow: 2px 2px 2px black;
+}
+
+.faq:nth-child(1){
+    padding-top: 10px;
+}
+
+.faq-ans-shoppy-span{
+    font-weight: bold;
+}
+
+.faq-ans-paypal-span{
+    font-style: italic;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
